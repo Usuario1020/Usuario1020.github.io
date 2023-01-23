@@ -1,0 +1,113 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Cormorant SC', serif; 
+}
+p {
+	font-size: 18px;
+}
+
+/* menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+/*imagen*/
+img{
+  margin: 0px 0px 0px 50px;
+}
+
+
+/* separador de secciones*/
+.principal{
+	border: 3px solid;
+  border-color: cornflowerblue;
+	padding: 5px;
+	margin: 5px;
+}
+
+.secundario{
+	border: 1px solid;
+  border-color: dimgrey;
+	padding: 5px;
+	margin: 5px;
+}
+
+#datos{
+  padding: 5px;
+}
+
+/* formulario*/
+label{
+  font-size: 18px;
+  display: flex;
+  
+}
+input {
+  display: flex;
+  outline: none;
+  font-weight: 30px;
+  color: CornflowerBlue;
+  width: 100%;
+  border: 3px solid #555;
+  margin: 0px 0px 10px 0px;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+  display: flex;
+}
+textarea {
+  display: flex;
+  outline: none;
+  font-weight: 30px;
+  color: CornflowerBlue;
+  width: 100%;
+  border: 2px solid #555;
+  type=text:focus;
+}
+textarea[type=text]:focus {
+  border: 3px solid #555;
+  display: flex;
+}
+
+input[type=submit] {
+  display: inline-flex;
+  background-color: CornflowerBlue;
+  color: black;
+  padding: 12px;
+  margin: 10px 0px 0px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+  width: 100%;
+}
+
+
+/* footer */
+.footer{
+  color: darkred;
+  text-align: center;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Curriculum Vitae">
+  <meta name="keywords" content="CV,Curriculum,Herbert, Nelson,">
+  <meta name="author" content="Herbert Nelson">
+  <meta property="og:imagen" content="img/94.jpg">
+  <meta property="og:imagen:type" content="image/jpg">
+  <meta property="og:imagen:width" content="128">
+  <meta property="og:imagen:height" content="128">
+  <link rel="icon" type="image/x-ico" href="img/favicon.ico">
+
+	<!-- Fontawesome, googlefont y Bootstrap-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Curriculum Vitae</title>
+</head>
+<body>
+<ul>
+	<!-- Fontawesome solo iconos version 4.7 -->
+  <li><a href="#top"><i class="fa fa-home"></i>Inicio</a></li>
+  <li><a href="#Experiencia"><i class="fa fa-industry"></i>Experiencia</a></li>
+  <li><a href="#Educacion"><i class="fa fa-institution"></i>Educacion</a></li>
+  <li><a href="#Contacto"><i class="fa fa-address-book"></i>Contacto</a></li>
+  <li><a href="#"><i class="fa fa-moon-o" onclick="modo_oscuro()"></i></a></li>
+  <li><a href="#"><i class="fa fa-sun-o" onclick="modo_claro()"></i></a></li>
+</ul>
+
+	<h1 align="center"> Curriculum Vitae</h1>
+<div class="row no-gutters">
+  <div class="col"><img src="img/94.jpg" alt="La imagen no pudo ser descargada"></div>
+  <div class="col-8"><h2>Nombre: Herbert Nelson</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+
+<section id="datos"><h2>Datos</h2>
+	<p><i class="fa fa-envelope" style="color: cornflowerblue;"></i> Correo: herbert.nelson@example.com</br></br>
+		<i class="fa fa-user-circle"style="color: cornflowerblue;"></i> Fecha de Nacimiento: 4/2/1988</br></br>
+		<i class="fa fa-map-marker" style="color: cornflowerblue;"></i> Direccion: 7049 Poplar Dr</br></br>
+		<i class="fa fa-phone"style="color: cornflowerblue;"></i> Telefono: (915) 634-2371</br></br>
+		<i class="fa fa-lock"style="color: cornflowerblue;"></i> Contraseña: nofear</p></section>
+
+<section class="principal" id="Experiencia"><h3 style="color:cornflowerblue;"><i class="fa fa-industry"></i> Experiencia</h3>
+
+<div class="row no-gutters">
+  <div class="col"><h4>Junio 2017 - Marzo 2019</h4></div>
+  <div class="col-8"><h2 onmousedown="comunicaciones1()" onmouseup="comunicaciones2()">Especialista en Comunicaciones</h2>
+  <p id="comunicaciones">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+
+<div class="row no-gutters">
+  <div class="col"><h4>Mayo 2020 - Agosto 2022</h4></div>
+  <div class="col-8"><h2 onmousedown="marketing1()" onmouseup="marketing2()">Marketing</h2>
+  <p id="marketing">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+
+<div class="row no-gutters">
+  <div class="col"><h4>Noviembre 2022- </h4></div>
+  <div class="col-8"><h2 onmousedown="diseño1()" onmouseup="diseño2()">Diseñador Grafico</h2>
+  <p id="diseño">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="alert alert-success" role="alert" align="center">
+  Trabajo al dia de la fecha.
+</div></div>
+</div>
+</section>
+
+<section class="principal" id="Educacion"><h3 style="color:cornflowerblue;"><i class="fa fa-institution"></i> Educacion</h3>
+
+<div class="row no-gutters">
+  <div class="col"><h4 id="primaria" onclick="primaria()">Primaria</h4></div>
+  <div class="col-8"><h2>Escuela Primaria XX</h2>
+  <p>Año 2000</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+
+<div class="row no-gutters">
+  <div class="col"><h4 id="secundaria" onclick="secundaria()">Secundaria</h4></div>
+  <div class="col-8"><h2>Escuela Secundaria XX</h2>
+  <p>Año 2007</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+
+<div class="row no-gutters">
+  <div class="col"><h4 id="universidad" onclick="universidad()">Universidad</h4></div>
+  <div class="col-8"><h2>Universidad XX</h2>
+  <p>Año 2014</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+</section>
+
+<section class="secundario"><h3 style="color:dimgrey;"> Projectos</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<section class="secundario"><h3 style="color:dimgrey;"> Idiomas</h3>
+<p>Frances nivel medio</p>
+</section>
+
+<section class="secundario"><h3 style="color:dimgrey;"> Logros</h3>
+<h4 id="logro1">Logro1</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h4 id="logro2">Logro2</h4>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
+<div><h2 id="Contacto"><i class="fa fa-address-book"></i> Contacto</h2>
+	<form id="formulario" action="" method="post">
+
+		<label>Nombre:</label>
+		<input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+
+		<label>Apellido:</label>
+		<input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+
+		<label>Correo:</label>
+		<input type="text" name="email" placeholder="Ingrese su e-mail" required>
+
+		<label>Telefono:</label>
+		<input type="number" name="telefono" placeholder="Ingrese su numero de Telefono" required>
+
+		<label>Consulta:</label>
+		<textarea type="text" required rows="5" name="mensaje" placeholder="Su consulta es bienvenida"></textarea>
+		<input type="submit" value="Enviar Consulta">
+	</form>
+</div>
+<div>
+  <p class="footer" id="footer" onclick="cheatsheet()"><i class="fa fa-info"style="color: cornflowerblue;"></i> Curriculum Vitae armado como Projecto de Frontend para Argentina programa 4.0</p>
+
+<script src="js/funcion.js"></script>
+</div>
+</body>
+</html>
